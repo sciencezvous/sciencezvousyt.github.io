@@ -1,116 +1,128 @@
-# Politique de Confidentialité — Recall
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité — Recall</title>
+<style>
+  body { font-family: -apple-system, Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 24px; color: #1a1a2e; line-height: 1.7; }
+  h1 { color: #7A5CFF; font-size: 28px; }
+  h2 { color: #2F80FF; border-bottom: 2px solid #eef; padding-bottom: 8px; margin-top: 32px; }
+  h3 { color: #24D7A6; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+  td, th { border: 1px solid #ddd; padding: 10px 12px; text-align: left; }
+  th { background: #f0f0ff; color: #2F80FF; font-weight: bold; }
+  a { color: #7A5CFF; }
+  code { background: #f5f5ff; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+  .badge { background: #7A5CFF; color: white; padding: 4px 12px; border-radius: 20px; font-size: 13px; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #eee; color: #999; font-size: 13px; }
+</style>
+</head>
+<body>
 
-**Dernière mise à jour : avril 2026**
+<p><span class="badge">Recall App</span></p>
 
----
+<h1>🔒 Politique de Confidentialité</h1>
+<p><strong>Dernière mise à jour : avril 2026</strong></p>
 
-## 1. Éditeur de l'application
+<hr>
 
-Recall est éditée par :
+<h2>1. Éditeur de l'application</h2>
+<p>Recall est éditée par :</p>
+<p>
+  <strong>[LEGRAND Andy]</strong><br>
+  [41 rue du trêve 01480 Villeneuve]<br>
+  France<br>
+  Email : <a href="mailto:[sciencezvousyt@gmail.com]">[TON EMAIL]</a>
+</p>
 
-**[Legrand Andy]**
-[41 rue du trêve 01480 Villeneuve]
-France
-Email : [sciencezvousyt@gmail.com]
+<hr>
 
----
+<h2>2. Données collectées</h2>
 
-## 2. Données collectées
+<h3>2.1 Données traitées localement sur votre appareil</h3>
+<p>Les données suivantes sont stockées <strong>uniquement sur votre appareil</strong>, chiffrées avec AES-256 :</p>
 
-### 2.1 Données traitées localement sur votre appareil
+<table>
+  <tr><th>Donnée</th><th>Finalité</th><th>Durée de conservation</th></tr>
+  <tr><td>Alias vocaux</td><td>Raccourcis vers vos contacts</td><td>Jusqu'à suppression manuelle</td></tr>
+  <tr><td>Mémoire contacts</td><td>Mémorisation de vos préférences d'envoi</td><td>Jusqu'à suppression manuelle</td></tr>
+  <tr><td>Historique des messages</td><td>Consultation de vos envois passés</td><td>90 jours maximum</td></tr>
+  <tr><td>Messages reçus (Inbox)</td><td>Affichage dans l'interface</td><td>7 jours maximum</td></tr>
+</table>
 
-Les données suivantes sont stockées **uniquement sur votre appareil**, chiffrées avec AES-256 :
+<p><strong>Recall ne collecte, ne vend et ne partage aucune de ces données avec des tiers.</strong></p>
 
-| Donnée | Finalité | Durée de conservation |
-|---|---|---|
-| Alias vocaux | Raccourcis vers vos contacts | Jusqu'à suppression manuelle |
-| Mémoire contacts | Mémorisation de vos préférences d'envoi | Jusqu'à suppression manuelle |
-| Historique des messages | Consultation de vos envois passés | 90 jours maximum |
-| Messages reçus (Inbox) | Affichage dans l'interface | 7 jours maximum |
+<h3>2.2 Données transmises à des sous-traitants</h3>
+<p>Lorsque vous utilisez les modes <strong>PRO</strong> ou <strong>DRAGUE</strong>, le texte de votre message dicté est transmis à :</p>
+<ul>
+  <li><strong>OpenAI (via Cloudflare Workers)</strong> — Reformulation intelligente du message. Données transmises : texte dicté uniquement, anonymisé. <a href="https://openai.com/privacy" target="_blank">Politique OpenAI</a></li>
+  <li><strong>Cloudflare</strong> — Infrastructure réseau. <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Politique Cloudflare</a></li>
+</ul>
+<p><strong>Le mode NORMAL ne transmet aucune donnée à des serveurs externes.</strong></p>
 
-**Recall ne collecte, ne vend et ne partage aucune de ces données avec des tiers.**
+<h3>2.3 Permissions Android utilisées</h3>
+<table>
+  <tr><th>Permission</th><th>Finalité</th></tr>
+  <tr><td><code>RECORD_AUDIO</code></td><td>Reconnaissance vocale pour dicter vos messages</td></tr>
+  <tr><td><code>READ_CONTACTS</code></td><td>Résolution du destinataire depuis vos contacts</td></tr>
+  <tr><td><code>SEND_SMS</code></td><td>Envoi de SMS directement depuis l'app</td></tr>
+  <tr><td><code>BIND_NOTIFICATION_LISTENER_SERVICE</code></td><td>Lecture des messages reçus dans l'Inbox unifiée</td></tr>
+  <tr><td><code>BLUETOOTH_CONNECT</code></td><td>Détection de la connexion à un autoradio (mode voiture)</td></tr>
+  <tr><td><code>INTERNET</code></td><td>Communication avec le serveur de reformulation IA</td></tr>
+</table>
 
-### 2.2 Données transmises à des sous-traitants
+<hr>
 
-Lorsque vous utilisez les modes **PRO** ou **DRAGUE**, le texte de votre message dicté est transmis à :
+<h2>3. Base légale du traitement (RGPD)</h2>
+<ul>
+  <li><strong>Consentement (Art. 6.1.a)</strong> : Vous consentez expressément au traitement lors de l'acceptation de cette politique au premier lancement.</li>
+  <li><strong>Exécution du service (Art. 6.1.b)</strong> : Le traitement est nécessaire à la fourniture du service.</li>
+  <li><strong>Intérêt légitime (Art. 6.1.f)</strong> : Amélioration de l'expérience via la mémoire des contacts.</li>
+</ul>
 
-**OpenAI (via Cloudflare Workers)**
-- Finalité : Reformulation intelligente du message
-- Données transmises : Texte dicté uniquement (anonymisé, sans identifiant personnel)
-- Politique d'OpenAI : [openai.com/privacy](https://openai.com/privacy)
-- Politique de Cloudflare : [cloudflare.com/privacy](https://www.cloudflare.com/privacypolicy/)
+<hr>
 
-**Le mode NORMAL ne transmet aucune donnée à des serveurs externes.**
+<h2>4. Vos droits (RGPD Art. 15 à 22)</h2>
+<ul>
+  <li><strong>Droit d'accès</strong> : Vos données sont consultables directement dans l'app.</li>
+  <li><strong>Droit à l'effacement</strong> : Menu ⋮ → À propos → Supprimer mes données.</li>
+  <li><strong>Droit à la portabilité</strong> : Vos données sont stockées localement et vous appartiennent.</li>
+  <li><strong>Droit d'opposition</strong> : Désactivez la transmission IA en utilisant uniquement le mode NORMAL.</li>
+  <li><strong>Droit de retrait du consentement</strong> : À tout moment via les paramètres de l'app.</li>
+</ul>
+<p>Pour exercer vos droits : <a href="mailto:[TON EMAIL]">[TON EMAIL]</a></p>
 
-### 2.3 Permissions Android utilisées
+<hr>
 
-| Permission | Finalité |
-|---|---|
-| `RECORD_AUDIO` | Reconnaissance vocale pour dicter vos messages |
-| `READ_CONTACTS` | Résolution du destinataire depuis vos contacts |
-| `SEND_SMS` | Envoi de SMS directement depuis l'app |
-| `BIND_NOTIFICATION_LISTENER_SERVICE` | Lecture des messages reçus dans l'Inbox unifiée |
-| `BLUETOOTH_CONNECT` | Détection de la connexion à un autoradio (mode voiture) |
-| `INTERNET` | Communication avec le serveur de reformulation IA |
+<h2>5. Sécurité des données</h2>
+<ul>
+  <li>Données locales chiffrées avec <strong>AES-256 GCM</strong></li>
+  <li>Clé de chiffrement stockée dans le <strong>Android Keystore</strong></li>
+  <li>Sauvegarde ADB désactivée (<code>allowBackup=false</code>)</li>
+  <li>Communications chiffrées via <strong>HTTPS/TLS 1.3</strong></li>
+</ul>
 
----
+<hr>
 
-## 3. Base légale du traitement (RGPD)
+<h2>6. Transfert hors UE</h2>
+<p>Vos messages dictés (modes PRO et DRAGUE uniquement) transitent par des serveurs d'OpenAI situés aux États-Unis. Ce transfert est encadré par les <strong>Clauses Contractuelles Types (CCT)</strong> conformément à l'Art. 46 du RGPD.</p>
 
-Conformément au Règlement Général sur la Protection des Données (RGPD) :
+<hr>
 
-- **Consentement (Art. 6.1.a)** : Vous consentez expressément au traitement lors de l'acceptation de cette politique au premier lancement.
-- **Exécution du service (Art. 6.1.b)** : Le traitement est nécessaire à la fourniture du service de messagerie vocale.
-- **Intérêt légitime (Art. 6.1.f)** : Amélioration de l'expérience utilisateur via la mémoire des contacts.
+<h2>7. Mineurs</h2>
+<p>Recall est destinée aux personnes âgées de <strong>13 ans et plus</strong>.</p>
 
----
+<hr>
 
-## 4. Vos droits (RGPD Art. 15 à 22)
+<h2>8. Contact & Réclamation</h2>
+<p>
+  <strong>[TON NOM COMPLET]</strong><br>
+  Email : <a href="mailto:[TON EMAIL]">[TON EMAIL]</a>
+</p>
+<p>Vous pouvez également adresser une réclamation à la <strong>CNIL</strong> : <a href="https://www.cnil.fr" target="_blank">cnil.fr</a></p>
 
-Conformément au RGPD, vous disposez des droits suivants :
+<footer>© 2026 Recall App — Tous droits réservés</footer>
 
-- **Droit d'accès** : Consulter toutes vos données via l'écran "À propos" → "Mes données"
-- **Droit à l'effacement** : Supprimer toutes vos données via "À propos" → "Supprimer mes données"
-- **Droit à la portabilité** : Vos données sont stockées localement et vous appartiennent
-- **Droit d'opposition** : Vous pouvez désactiver la transmission IA en utilisant uniquement le mode NORMAL
-- **Droit de retrait du consentement** : À tout moment via les paramètres de l'app
-
-Pour exercer vos droits : **[TON EMAIL]**
-
----
-
-## 5. Sécurité des données
-
-- Toutes les données locales sont chiffrées avec **AES-256 GCM**
-- La clé de chiffrement est stockée dans le **Android Keystore** (matériel)
-- La sauvegarde ADB est désactivée (`allowBackup=false`)
-- Les communications avec nos serveurs sont chiffrées via **HTTPS/TLS 1.3**
-
----
-
-## 6. Transfert hors UE
-
-Vos messages dictés (modes PRO et DRAGUE uniquement) transitent par des serveurs d'OpenAI situés aux États-Unis. Ce transfert est encadré par les **Clauses Contractuelles Types (CCT)** de la Commission Européenne, conformément à l'Art. 46 du RGPD.
-
----
-
-## 7. Mineurs
-
-Recall est destinée aux personnes âgées de **13 ans et plus**. Nous ne collectons pas sciemment de données concernant des enfants de moins de 13 ans.
-
----
-
-## 8. Modifications
-
-Toute modification substantielle de cette politique vous sera notifiée via l'application. La date de dernière mise à jour figure en haut de ce document.
-
----
-
-## 9. Contact & Réclamation
-
-**[TON NOM COMPLET]**
-Email : **[TON EMAIL]**
-
-Vous pouvez également adresser une réclamation à la **CNIL** :
-Site : [cnil.fr](https://www.cnil.fr)
-Téléphone : 01 53 73 22 22
+</body>
+</html>
