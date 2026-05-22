@@ -1,129 +1,252 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Politique de confidentialité — Vokly</title>
-<style>
-  body { font-family: -apple-system, Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 24px; color: #1a1a2e; line-height: 1.7; }
-  h1 { color: #7A5CFF; font-size: 28px; }
-  h2 { color: #2F80FF; border-bottom: 2px solid #eef; padding-bottom: 8px; margin-top: 32px; }
-  h3 { color: #24D7A6; }
-  table { border-collapse: collapse; width: 100%; margin: 16px 0; }
-  td, th { border: 1px solid #ddd; padding: 10px 12px; text-align: left; }
-  th { background: #f0f0ff; color: #2F80FF; font-weight: bold; }
-  a { color: #7A5CFF; }
-  code { background: #f5f5ff; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
-  .badge { background: #7A5CFF; color: white; padding: 4px 12px; border-radius: 20px; font-size: 13px; }
-  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #eee; color: #999; font-size: 13px; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de confidentialité – Vokly</title>
+  <style>
+    :root {
+      --bg: #070b18;
+      --card: #10142b;
+      --text: #f5f7fb;
+      --muted: #a9b6d3;
+      --line: rgba(255,255,255,0.12);
+      --violet: #a855f7;
+      --cyan: #22d3ee;
+      --mint: #14f1b4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top, rgba(168,85,247,0.24), transparent 34rem),
+        radial-gradient(circle at 80% 12%, rgba(34,211,238,0.16), transparent 22rem),
+        var(--bg);
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 32px 18px 48px;
+    }
+    header {
+      padding: 28px 22px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: rgba(16,20,43,0.78);
+      box-shadow: 0 18px 60px rgba(34,211,238,0.10);
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--cyan), var(--mint), var(--violet));
+      color: #06101c;
+      font-weight: 700;
+      font-size: 13px;
+    }
+    h1 {
+      margin: 18px 0 8px;
+      font-size: clamp(30px, 6vw, 46px);
+      line-height: 1.08;
+    }
+    h2 {
+      margin-top: 34px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+      color: #dbeafe;
+      font-size: 22px;
+    }
+    h3 {
+      margin-top: 22px;
+      color: var(--mint);
+      font-size: 17px;
+    }
+    p, li { color: var(--muted); }
+    strong { color: var(--text); }
+    a { color: var(--mint); }
+    ul { padding-left: 22px; }
+    section {
+      margin-top: 18px;
+      padding: 4px 2px;
+    }
+    .card {
+      margin-top: 16px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(16,20,43,0.56);
+    }
+    .notice {
+      border-left: 4px solid var(--cyan);
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(34,211,238,0.08);
+    }
+    footer {
+      margin-top: 38px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: #7f8da8;
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 18px 14px 38px; }
+      header { padding: 22px 16px; border-radius: 20px; }
+      h2 { font-size: 20px; }
+    }
+  </style>
 </head>
 <body>
+  <main>
+    <header>
+      <span class="badge">Vokly</span>
+      <h1>Politique de confidentialité – Vokly</h1>
+      <p><strong>Dernière mise à jour : 21 mai 2026</strong></p>
+      <p>
+        Cette politique explique quelles données peuvent être collectées ou traitées
+        par l'application Vokly, pourquoi elles le sont, et comment exercer vos droits.
+      </p>
+    </header>
 
-<p><span class="badge">Vokly</span></p>
+    <section>
+      <h2>1. Responsable du traitement</h2>
+      <p>
+        Le responsable du traitement est <strong>Andy Legrand</strong>.<br>
+        Contact : <a href="mailto:sciencezvousyt@gmail.com">sciencezvousyt@gmail.com</a>
+      </p>
+    </section>
 
-<h1>🔒 Politique de Confidentialité</h1>
-<p><strong>Dernière mise à jour : avril 2026</strong></p>
+    <section>
+      <h2>2. Données collectées ou traitées</h2>
+      <p>Selon les fonctions utilisées, Vokly peut collecter ou traiter les catégories de données suivantes :</p>
+      <ul>
+        <li><strong>Compte utilisateur</strong> : adresse email, identifiant Firebase, @handle Vokly, nom affiché.</li>
+        <li><strong>Profil</strong> : avatar ou photo si l'utilisateur en ajoute une.</li>
+        <li><strong>Messages Vokly-to-Vokly</strong> : contenu des messages, date, expéditeur, destinataire, statuts Envoyé/Reçu/Lu et indicateur "écrit...".</li>
+        <li><strong>Contacts Vokly</strong> : demandes de contact, contacts acceptés et identifiants nécessaires à la mise en relation.</li>
+        <li><strong>Notifications</strong> : tokens FCM et métadonnées nécessaires à l'envoi des notifications.</li>
+        <li><strong>Inbox externe, si activée</strong> : informations issues des notifications Android nécessaires à l'affichage dans Vokly.</li>
+        <li><strong>Agent Vokly / IA</strong> : textes transmis volontairement pour générer des réponses, résumés, reformulations ou sujets email.</li>
+        <li><strong>Données techniques</strong> : logs techniques, crashs et informations nécessaires à la stabilité, à la sécurité et au fonctionnement de l'app.</li>
+      </ul>
+      <p class="notice">
+        Les notifications peuvent être privées par défaut : Vokly peut afficher une notification ou un rappel sans révéler le contenu privé du message.
+      </p>
+    </section>
 
-<hr>
+    <section>
+      <h2>3. Utilisation des données</h2>
+      <p>Les données peuvent être utilisées pour :</p>
+      <ul>
+        <li>créer et gérer le compte utilisateur ;</li>
+        <li>permettre la messagerie Vokly-to-Vokly ;</li>
+        <li>afficher les conversations, notifications et statuts de message ;</li>
+        <li>permettre l'inbox unifiée si l'utilisateur l'active ;</li>
+        <li>fournir Agent Vokly et les fonctions IA ;</li>
+        <li>générer ou préremplir un sujet email à la demande de l'utilisateur ;</li>
+        <li>appliquer les quotas Free / Plus / Premium ;</li>
+        <li>améliorer la stabilité et corriger les erreurs ;</li>
+        <li>assurer la sécurité et prévenir les abus.</li>
+      </ul>
+      <p>
+        Les messages simples restent possibles sans utiliser l'IA. Le sujet email prérempli peut utiliser l'IA selon le plan ou le quota disponible.
+      </p>
+    </section>
 
-<h2>1. Éditeur de l'application</h2>
-<p>Vokly est éditée par :</p>
-<p>
-  <strong>LEGRAND Andy</strong><br>
-  41 rue du trêve 01480 Villeneuve<br>
-  France<br>
-  Email : <a href="mailto:sciencezvousyt@gmail.com">sciencezvousyt@gmail.com</a>
-</p>
+    <section>
+      <h2>4. Fournisseurs et partage avec des tiers</h2>
+      <p>Vokly peut s'appuyer sur les services suivants :</p>
+      <ul>
+        <li><strong>Firebase / Google</strong> pour l'authentification, la base de données, les notifications et les crashs.</li>
+        <li><strong>Cloudflare Worker</strong> pour certaines fonctions backend/API.</li>
+        <li><strong>Mistral</strong> comme fournisseur principal pour les fonctions d'intelligence artificielle.</li>
+        <li><strong>OpenAI</strong> comme fournisseur de secours/fallback lorsque nécessaire.</li>
+        <li><strong>Google Play Billing</strong> pour les achats ou abonnements si disponibles.</li>
+      </ul>
+      <p>
+        Les contenus envoyés à Agent Vokly peuvent être transmis à Mistral ou OpenAI uniquement pour fournir la fonction demandée.
+        Vokly ne vend pas les données personnelles et ne partage pas les messages à des fins publicitaires.
+      </p>
+      <p>Les messages simples Vokly-to-Vokly peuvent être envoyés sans utiliser l'IA.</p>
+    </section>
 
-<hr>
+    <section>
+      <h2>5. Agent Vokly</h2>
+      <div class="card">
+        <p>
+          Agent Vokly peut aider à préparer une réponse, reformuler un message, résumer une conversation ou générer un sujet d'e-mail.
+          L'utilisateur garde le contrôle et valide avant l'envoi.
+        </p>
+        <p>
+          L'envoi automatique n'est pas activé dans cette version. Les fonctions Agent/IA peuvent être limitées selon le plan ou le quota disponible.
+        </p>
+        <p>
+          Mistral est utilisé comme fournisseur IA principal. OpenAI peut être utilisé comme solution de secours lorsque nécessaire.
+        </p>
+      </div>
+    </section>
 
-<h2>2. Données collectées</h2>
+    <section>
+      <h2>6. Publicités</h2>
+      <p>
+        Les publicités récompensées ne sont pas actives dans cette version de Vokly.
+        Cette politique pourra être mise à jour si des publicités récompensées sont ajoutées plus tard.
+      </p>
+      <p>Vokly ne déclare pas contenir actuellement des annonces si la version distribuée ne les intègre pas.</p>
+    </section>
 
-<h3>2.1 Données traitées localement sur votre appareil</h3>
-<p>Les données suivantes sont stockées <strong>uniquement sur votre appareil</strong>, chiffrées avec AES-256 :</p>
+    <section>
+      <h2>7. Sécurité</h2>
+      <p>
+        Vokly utilise des services sécurisés comme Firebase/Google pour protéger l'accès aux données et des communications réseau sécurisées lorsque des données transitent vers ses services.
+      </p>
+      <p class="notice">
+        Cependant, Vokly ne doit pas être considéré comme une messagerie chiffrée de bout en bout dans cette version.
+      </p>
+    </section>
 
-<table>
-  <tr><th>Donnée</th><th>Finalité</th><th>Durée de conservation</th></tr>
-  <tr><td>Alias vocaux</td><td>Raccourcis vers vos contacts</td><td>Jusqu'à suppression manuelle</td></tr>
-  <tr><td>Mémoire contacts</td><td>Mémorisation de vos préférences d'envoi</td><td>Jusqu'à suppression manuelle</td></tr>
-  <tr><td>Historique des messages</td><td>Consultation de vos envois passés</td><td>90 jours maximum</td></tr>
-  <tr><td>Messages reçus (Inbox)</td><td>Affichage dans l'interface</td><td>7 jours maximum</td></tr>
-</table>
+    <section>
+      <h2>8. Conservation et suppression</h2>
+      <p>
+        Les données sont conservées tant que le compte existe ou tant qu'elles sont nécessaires au fonctionnement du service, à la sécurité, à la correction des erreurs ou au respect d'obligations légales.
+      </p>
+      <p>
+        L'utilisateur peut demander la suppression de son compte ou de ses données en contactant :
+        <a href="mailto:sciencezvousyt@gmail.com">sciencezvousyt@gmail.com</a>.
+      </p>
+    </section>
 
-<p><strong>Vokly ne collecte, ne vend et ne partage aucune de ces données avec des tiers.</strong></p>
+    <section>
+      <h2>9. Droits utilisateur</h2>
+      <p>Selon la réglementation applicable, vous pouvez demander :</p>
+      <ul>
+        <li>l'accès à vos données ;</li>
+        <li>la rectification de données inexactes ;</li>
+        <li>la suppression de vos données ;</li>
+        <li>l'opposition à certains traitements lorsque applicable.</li>
+      </ul>
+      <p>Contact : <a href="mailto:sciencezvousyt@gmail.com">sciencezvousyt@gmail.com</a></p>
+    </section>
 
-<h3>2.2 Données transmises à des sous-traitants</h3>
-<p>Lorsque vous utilisez les modes <strong>PRO</strong> ou <strong>DRAGUE</strong>, le texte de votre message dicté est transmis à :</p>
-<ul>
-  <li><strong>OpenAI (via Cloudflare Workers)</strong> — Reformulation intelligente du message. Données transmises : texte dicté uniquement, anonymisé. <a href="https://openai.com/privacy" target="_blank">Politique OpenAI</a></li>
-  <li><strong>Cloudflare</strong> — Infrastructure réseau. <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Politique Cloudflare</a></li>
-</ul>
-<p><strong>Le mode NORMAL ne transmet aucune donnée à des serveurs externes.</strong></p>
+    <section>
+      <h2>10. Mineurs</h2>
+      <p>Vokly n'est pas destiné aux enfants de moins de 13 ans.</p>
+    </section>
 
-<h3>2.3 Permissions Android utilisées</h3>
-<table>
-  <tr><th>Permission</th><th>Finalité</th></tr>
-  <tr><td><code>RECORD_AUDIO</code></td><td>Reconnaissance vocale pour dicter vos messages</td></tr>
-  <tr><td><code>READ_CONTACTS</code></td><td>Résolution du destinataire depuis vos contacts</td></tr>
-  <tr><td><code>SEND_SMS</code></td><td>Envoi de SMS directement depuis l'app</td></tr>
-  <tr><td><code>BIND_NOTIFICATION_LISTENER_SERVICE</code></td><td>Lecture des messages reçus dans l'Inbox unifiée</td></tr>
-  <tr><td><code>BIND_ACCESSIBILITY_SERVICE</code></td><td>Appui automatique sur le bouton Envoyer dans WhatsApp uniquement</td></tr>
-  <tr><td><code>BLUETOOTH_CONNECT</code></td><td>Détection de la connexion à un autoradio (mode voiture)</td></tr>
-  <tr><td><code>INTERNET</code></td><td>Communication avec le serveur de reformulation IA</td></tr>
-</table>
+    <section>
+      <h2>11. Contact</h2>
+      <p>
+        <strong>Andy Legrand</strong><br>
+        <a href="mailto:sciencezvousyt@gmail.com">sciencezvousyt@gmail.com</a>
+      </p>
+    </section>
 
-<hr>
-
-<h2>3. Base légale du traitement (RGPD)</h2>
-<ul>
-  <li><strong>Consentement (Art. 6.1.a)</strong> : Vous consentez expressément au traitement lors de l'acceptation de cette politique au premier lancement.</li>
-  <li><strong>Exécution du service (Art. 6.1.b)</strong> : Le traitement est nécessaire à la fourniture du service.</li>
-  <li><strong>Intérêt légitime (Art. 6.1.f)</strong> : Amélioration de l'expérience via la mémoire des contacts.</li>
-</ul>
-
-<hr>
-
-<h2>4. Vos droits (RGPD Art. 15 à 22)</h2>
-<ul>
-  <li><strong>Droit d'accès</strong> : Vos données sont consultables directement dans l'app.</li>
-  <li><strong>Droit à l'effacement</strong> : Menu ⋮ → À propos → Supprimer mes données.</li>
-  <li><strong>Droit à la portabilité</strong> : Vos données sont stockées localement et vous appartiennent.</li>
-  <li><strong>Droit d'opposition</strong> : Désactivez la transmission IA en utilisant uniquement le mode NORMAL.</li>
-  <li><strong>Droit de retrait du consentement</strong> : À tout moment via les paramètres de l'app.</li>
-</ul>
-<p>Pour exercer vos droits : <a href="mailto:sciencezvousyt@gmail.com">sciencezvousyt@gmail.com</a></p>
-
-<hr>
-
-<h2>5. Sécurité des données</h2>
-<ul>
-  <li>Données locales chiffrées avec <strong>AES-256 GCM</strong></li>
-  <li>Clé de chiffrement stockée dans le <strong>Android Keystore</strong></li>
-  <li>Sauvegarde ADB désactivée (<code>allowBackup=false</code>)</li>
-  <li>Communications chiffrées via <strong>HTTPS/TLS 1.3</strong></li>
-</ul>
-
-<hr>
-
-<h2>6. Transfert hors UE</h2>
-<p>Vos messages dictés (modes PRO et DRAGUE uniquement) transitent par des serveurs d'OpenAI situés aux États-Unis. Ce transfert est encadré par les <strong>Clauses Contractuelles Types (CCT)</strong> conformément à l'Art. 46 du RGPD.</p>
-
-<hr>
-
-<h2>7. Mineurs</h2>
-<p>Vokly est destinée aux personnes âgées de <strong>13 ans et plus</strong>.</p>
-
-<hr>
-
-<h2>8. Contact & Réclamation</h2>
-<p>
-  <strong>LEGRAND Andy</strong><br>
-  Email : <a href="mailto:sciencezvousyt@gmail.com">sciencezvousyt@gmail.com</a>
-</p>
-<p>Vous pouvez également adresser une réclamation à la <strong>CNIL</strong> : <a href="https://www.cnil.fr" target="_blank">cnil.fr</a></p>
-
-<footer>© 2026 Vokly — Tous droits réservés</footer>
-
+    <footer>
+      © 2026 Vokly — Politique de confidentialité publique.
+    </footer>
+  </main>
 </body>
 </html>
