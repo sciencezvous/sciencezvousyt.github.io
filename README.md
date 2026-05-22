@@ -1,3 +1,6 @@
-﻿# sciencezvousyt.github.io
-Recall App â€” Legal
+﻿# Vokly legal pages
+
+Public legal and support pages for Vokly.
+
+Contact: sciencezvousyt@gmail.com
 
